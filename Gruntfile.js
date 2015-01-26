@@ -18,6 +18,8 @@ module.exports = function(grunt) {
     uglify: {
       development: {
         options: {
+          report: 'min',
+          wrap: 'COMEON',
           mangle: false,
           preserveComments: false
         },

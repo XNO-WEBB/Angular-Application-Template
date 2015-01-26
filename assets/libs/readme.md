@@ -10,4 +10,5 @@ NodeJS
 
 
 
-libs/readme.md
+location:
+	assets/libs
