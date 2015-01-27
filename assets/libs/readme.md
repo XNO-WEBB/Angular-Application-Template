@@ -1,14 +1,5 @@
-This folder should hold the locations off your
-Librarys to use. 
-
-Ex
-
-Jquery
-Jquery-ui
-AngularJS
-NodeJS
+Put your dependendencies here. 
+The Grunt file will minify everything into dependencies files.
 
 
-
-location:
-	assets/libs
+	> assets/libs
