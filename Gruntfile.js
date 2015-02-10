@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         },
         files: {
           "assets/css/dependencies.min.css" : ["assets/libs/**/*.css"],
-          "assets/css/main.min.css": ["assets/css/extras/**/*.less"]
+          "assets/css/main.min.css": ["assets/css/extras/main.less", "assets/css/extras/**/*.less"]
         }
       }
     },
@@ -18,8 +18,6 @@ module.exports = function(grunt) {
     uglify: {
       development: {
         options: {
-          report: 'min',
-          wrap: 'COMEON',
           mangle: false,
           preserveComments: false
         },
