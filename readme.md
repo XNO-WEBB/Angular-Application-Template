@@ -1,6 +1,8 @@
 XNO - Angular Applications
 ==========================
 
+##TODO: UPDATE ALL
+
 Installation
 ------------
 
