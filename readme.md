@@ -1,8 +1,6 @@
 XNO - Angular Applications
 ==========================
 
-##TODO: UPDATE ALL
-
 Installation
 ------------
 
@@ -32,13 +30,18 @@ File structure
 	--------------- blogView.html
 	----- app.module.js
 	----- app.routes.js
-	assets/
+	config/
+	-------- locationProvider.config.js // Our config files for angular
+	public/
+	-------- css/	// All assets that have been grunted is stored
+	-------- js/	// inside a public folder for easier access
+	-------- img/	//
+	resources/
 	----- img/      // Images and icons for your app
-	----- css/      // All styles and style related files (SCSS or LESS files)
+	----- less/     // All your less files
 	----- js/       // JavaScript files written for your app that are not for angular
 	----- libs/     // Third-party libraries such as jQuery, Moment, Underscore, etc.
 	index.html
-
 
 
 References
