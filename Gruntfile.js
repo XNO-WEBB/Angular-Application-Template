@@ -39,10 +39,10 @@ module.exports = function(grunt)
                 },
                 files:
                 {
-                    "public/js/dependencies.min.js": [
-                        "resources/assets/libs/AngularJS/angular.min.js",
-                        "resources/assets/libs/**/*.js"
-                    ],
+                    // "public/js/dependencies.min.js": [
+                    //     "resources/assets/libs/AngularJS/angular.min.js",
+                    //     "resources/assets/libs/**/*.js"
+                    // ],
                     "public/js/application.min.js": [
                         "app/app.module.js",
                         "config/**/*.js",
@@ -51,6 +51,17 @@ module.exports = function(grunt)
                     "public/js/main.min.js": [
                         "resources/assets/js/**/*.js"
                     ]
+                }
+            },
+        },
+
+        wiredep: {
+            task: {
+                src: [
+                    './index.html'
+                ],
+                options: {
+                    devDependencies: true
                 }
             }
         },
@@ -73,7 +84,7 @@ module.exports = function(grunt)
         {
             options:
             {
-                livereload: true
+                livereload: false
             },
             scripts:
             {
@@ -107,6 +118,7 @@ module.exports = function(grunt)
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-wiredep');
     grunt.loadNpmTasks('grunt-newer');
 
     grunt.registerTask('default', ['less', 'uglify', 'watch']);
