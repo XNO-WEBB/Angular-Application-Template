@@ -122,5 +122,5 @@ module.exports = function(grunt)
 
     grunt.registerTask('default', ['less', 'uglify', 'watch']);
     grunt.registerTask('all', ['less', 'uglify', 'imagemin']);
-    grunt.registerTasl('install', ['wiredep']);
+    grunt.registerTask('install', ['wiredep']);
 };
