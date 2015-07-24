@@ -1,22 +1,22 @@
 {
-  "name": "Angular-Application-Template",
-  "version": "0.2.0",
-  "homepage": "https://github.com/XNO-WEBB/Angular-Application-Template",
-  "authors": [
+    "name": "Angular-Application-Template",
+    "version": "0.2.0",
+    "homepage": "https://github.com/XNO-WEBB/Angular-Application-Template",
+    "authors": [
     "VipEx <staffan.selander@lund.ntig.se>"
   ],
-  "main": "index.html",
-  "license": "MIT",
-  "ignore": [
+    "main": "index.html",
+    "license": "MIT",
+    "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "angular": "~1.4.3",
-    "angular-route": "~1.4.3",
-    "sails.io.js": "~0.11.5"
-  }
+    "devDependencies":
+    {
+        "angular": "~1.4.3",
+        "angular-route": "~1.4.3"
+    }
 }

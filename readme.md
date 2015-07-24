@@ -7,6 +7,8 @@ Installation
 	> npm install -g grunt-cli
 	> npm install
 
+	> grunt install
+
 
 File structure
 --------------
@@ -40,7 +42,6 @@ File structure
 	----- img/      // Images and icons for your app
 	----- less/     // All your less files
 	----- js/       // JavaScript files written for your app that are not for angular
-	----- libs/     // Third-party libraries such as jQuery, Moment, Underscore, etc.
 	index.html
 
 

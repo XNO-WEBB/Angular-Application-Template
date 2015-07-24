@@ -9,13 +9,6 @@ app.config(function($routeProvider)
 		controller: 'homeController'
 	})
 
-	.when('/posts',
-	{
-		templateUrl: 'app/components/posts/postsView.html',
-		controller: 'postsController',
-		controllerAs: 'posts'
-	})
-
 	.otherwise(
 	{
 		redirectTo: '/'

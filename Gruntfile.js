@@ -39,10 +39,6 @@ module.exports = function(grunt)
                 },
                 files:
                 {
-                    // "public/js/dependencies.min.js": [
-                    //     "resources/assets/libs/AngularJS/angular.min.js",
-                    //     "resources/assets/libs/**/*.js"
-                    // ],
                     "public/js/application.min.js": [
                         "app/app.module.js",
                         "config/**/*.js",
@@ -55,12 +51,15 @@ module.exports = function(grunt)
             },
         },
 
-        wiredep: {
-            task: {
+        wiredep:
+        {
+            task:
+            {
                 src: [
                     './index.html'
                 ],
-                options: {
+                options:
+                {
                     devDependencies: true
                 }
             }
@@ -123,4 +122,5 @@ module.exports = function(grunt)
 
     grunt.registerTask('default', ['less', 'uglify', 'watch']);
     grunt.registerTask('all', ['less', 'uglify', 'imagemin']);
+    grunt.registerTasl('install', ['wiredep']);
 };
