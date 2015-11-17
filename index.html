@@ -1,58 +1,29 @@
 <!doctype html>
-<html lang="en" ng-app="myApplication" ng-controller="appController as app">
+<html lang="en" ng-app="myApplication">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
 	<base href="/">
 
-	<title>Staffan Selander .li - Full stack developer</title>
+	<title>XNO - Angular Setup</title>
 
-	<link rel="apple-touch-icon" sizes="57x57" href="public/img/favicons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="public/img/favicons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="public/img/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="public/img/favicons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="public/img/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="public/img/favicons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="public/img/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="public/img/favicons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="public/img/favicons/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="public/img/favicons/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="public/img/favicons/android-chrome-192x192.png" sizes="192x192">
-	<link rel="icon" type="image/png" href="public/img/favicons/favicon-96x96.png" sizes="96x96">
-	<link rel="icon" type="image/png" href="public/img/favicons/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="public/img/favicons/manifest.json">
-	<link rel="mask-icon" href="public/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="public/img/favicons/favicon.ico">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="public/img/favicons/mstile-144x144.png">
-	<meta name="msapplication-config" content="public/img/favicons/browserconfig.xml">
-	<meta name="theme-color" content="#ffffff">
-
+	<link rel="stylesheet" href="public/css/dependencies.min.css">
 	<link rel="stylesheet" href="public/css/main.min.css">
-
 </head>
-<body ng-class="app.data.mainLocation">
-
-<div class="top-bar"></div>
+<body>
 
 <navbar></navbar>
 
-<div ng-view>
-	<div class="start">
-		<h1>A GENTLE INTRODUCTION</h1>
-		<p>I'm a full stack webdeveloper, No fuzz</p>
-		<p>You probably need me.</p>
+<div class="container">
+	<div ng-view>
 	</div>
 </div>
 
-<div class="under-construction wow fadeIn">
-	UNDER CONSTRUCTION! 
-</div>
+<!-- bower:js -->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!-- endbower -->
 
-<script src="public/js/dependencies.min.js"></script>
+<script src="public/js/application.min.js"></script>
 <script src="public/js/main.min.js"></script>
-
-
 </body>
 </html>

@@ -3,19 +3,7 @@ app.config(function($routeProvider)
 
 	$routeProvider
 
-	.when('/skills', 
-	{
-		templateUrl: 'app/components/skills/skillsView.html',
-		controller: 'skillsController'
-	})
-
-	.when('/experience', 
-	{
-		templateUrl: 'app/components/experience/experienceView.html',
-		controller: 'experienceController'
-	})
-
-	.when('/home',
+		.when('/',
 	{
 		templateUrl: 'app/components/home/homeView.html',
 		controller: 'homeController'
@@ -23,7 +11,7 @@ app.config(function($routeProvider)
 
 	.otherwise(
 	{
-		redirectTo: '/home'
+		redirectTo: '/'
 	});
 
 });
